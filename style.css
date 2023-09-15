@@ -98,10 +98,13 @@ a {
 
 /* DEBUG */
 
- .debug [class^="col"] {
-  border: 1px solid black;
-  padding: 10px;
-} 
+ .col-8 {
+  border: solid 1px;
+ }
+
+ .col-4 {
+  border: solid 1px;
+ }
 
 
 
@@ -110,6 +113,7 @@ header {
   background-color: var(--blue);
   padding: 20px;
   color: var(--light);
+  margin-bottom: 50px;
 }
 
 header .navbar-list {
@@ -126,15 +130,68 @@ header .ham-menu {
 /* INIZIO MAIN */
 
   /* section hero */
-.hero .col-content h3{
-  color: var(--blue);
+
+.hero .col-content {
+  padding: 36px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  line-height: 32px;
 }
 
-.hero .col-8 {
+.hero .col-content h3{
+  color: #0084FD;
+}
+
+.hero .col-content .button {
+  background-color: var(--blue);
+  color: var(--light);
+  padding: 0 26px;
+  max-width: 200px;
+}
+
+.hero .col-4 .col-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .col-8, .hero .col-4 {
+  border-radius: 22px;
+  background-color: var(--light-blue);
+}
+
+.hero .col-4 i {
+  font-size: 90px;
+  color: #0084FD;
+}
+
+.hero .col-4 {
   display: flex;
 }
 
+.hero .col-8 {
+   display: flex;
+}
+
+.hero .col-8 .col-content, 
+.hero .col-8 .col-img  {
+  flex-basis: 50%;
+}
+
+.hero .col-8 .col-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero .col-8 .col-img img{
+  display: block;
+  width: 80%;
+}
+
 /* FINE MAIN */
+
 
 /* RESPONSIVE */
 
