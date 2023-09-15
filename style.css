@@ -93,7 +93,17 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 0 18px;
+  display: inline-block;
 }
+
+/* DEBUG */
+
+ .debug [class^="col"] {
+  border: 1px solid black;
+  padding: 10px;
+} 
+
+
 
 /* HEADER */
 header {
@@ -111,6 +121,20 @@ header .navbar-list {
 header .ham-menu {
   display: none;
 }
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+
+  /* section hero */
+.hero .col-content h3{
+  color: var(--blue);
+}
+
+.hero .col-8 {
+  display: flex;
+}
+
+/* FINE MAIN */
 
 /* RESPONSIVE */
 
