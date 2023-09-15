@@ -82,7 +82,7 @@ a {
 .align-items-center {
   align-items: center;
 }
-
+-widthmax
 
 /* COMPONENT CLASSES */
 
@@ -98,13 +98,6 @@ a {
 
 /* DEBUG */
 
- .col-8 {
-  border: solid 1px;
- }
-
- .col-4 {
-  border: solid 1px;
- }
 
 
 
@@ -130,6 +123,17 @@ header .ham-menu {
 /* INIZIO MAIN */
 
   /* section hero */
+.hero .row {
+  gap: 24px;
+}
+
+.hero .col-8 {
+  flex-basis: calc((100% / 12) * 8 - 24px);
+}
+
+.hero .col-4 {
+  flex-basis: calc((100% / 12) * 4 - 24px);
+}
 
 .hero .col-content {
   padding: 36px 22px;
@@ -183,11 +187,11 @@ header .ham-menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .hero .col-8 .col-img img{
-  display: block;
-  width: 80%;
+ width: 70%;
 }
 
 /* FINE MAIN */
@@ -195,7 +199,11 @@ header .ham-menu {
 
 /* RESPONSIVE */
 
-@media (min-width: 0px) { 
+/* small devices */
+@media (min-width: 100px) { 
+
+  /* header */
+
   header .ham-menu {
     display: block;
     font-size: 26px;
@@ -205,27 +213,65 @@ header .ham-menu {
     display: flex;
     align-items: center;
   }
+
   header .navbar-list {
     display: none;
   }
- }
 
-/* Small devices (landscape phones, 576px and up) */
+  /* hero section */
 
-@media (min-width: 576px) { 
-  
+  .hero .container {
+    padding:0 20px;
+  }
+
+  .hero .col-8 {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .hero .col-8 .col-content {
+    align-items: center;
+  }
+
+  .hero .col-8 .col-img img {
+    width: 40%;
+  }
+
+  .hero .col-4 {
+    flex-basis: 100%;
+  }
+
+  /* fine header */
  }
 
  /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) { 
 
+  /* hero section */
+
+  .hero .col-8 {
+    flex-basis: calc((100% / 12) * 8 - 24px);
+  }
+  .hero .col-8 .col-img {
+    align-items: flex-start;
+  }
+
+  .hero .col-8 .col-content {
+    align-items: flex-start;
+  }
+
+  .hero .col-4 {
+    flex-basis: calc((100% / 12) * 4 - 24px);
+  }
 }
 
  /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) { 
+
   /* header */
+
   header .ham-menu {
     display: none;
   }
@@ -233,6 +279,18 @@ header .ham-menu {
   header .navbar-list {
     display: flex;
   }
+
+  /* hero section */
+
+  .hero .col-8 {
+    flex-direction: row;
+  }
+
+  .hero .col-8 .col-img img {
+    width: 70%;
+  }
+
+  /* fine header */
 }
 
 
