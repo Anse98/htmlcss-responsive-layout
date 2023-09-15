@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+
+}
+
+img {
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: inline-block;
+}
+/* PALETTE COLORI */
+
+:root {
+  --blue:#0084FD;
+  --light-blue:#B5DDFF;
+  --purple:#9792E4;
+  --yellow:#FDC15F;
+  --dark-grey:#333333;
+  --light:#FFFFFF;
+
+}
+/* LAYOUTS */
+
+.container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.container-medium {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  flex-basis: calc((100% / 12) * 4);
+}
+
+.col-6 {
+  flex-basis: calc((100% / 12) * 6);
+}
+
+.col-8 {
+  flex-basis: calc((100% / 12) * 8);
+}
+
+.col-12 {
+  flex-basis: calc((100% / 12) * 12);
+}
+
+/* UTILITY CLASSES */
+
+.justify-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+
+/* COMPONENT CLASSES */
+
+.button {
+  color: black;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 18px;
+}
+
+/* HEADER */
+header {
+  background-color: var(--blue);
+  padding: 20px;
+  color: var(--light);
+}
+
+header .navbar-list {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+header .ham-menu {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 0px) { 
+  header .ham-menu {
+    display: block;
+    font-size: 26px;
+  }
+
+  header .flex-ham {
+    display: flex;
+    align-items: center;
+  }
+  header .navbar-list {
+    display: none;
+  }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) { 
+  
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) { 
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) { 
+  /* header */
+  header .ham-menu {
+    display: none;
+  }
+
+  header .navbar-list {
+    display: flex;
+  }
+}
+
+
+
+
