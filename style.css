@@ -365,9 +365,7 @@ header .ham-menu {
   /* fine hero section */
 
   /* inizio section 2 */
-  /* .section-2 .container-medium {
-    padding: 16px;
-  } */
+  
   .section-2 .text-out {
     flex-basis: 100%;
   }
@@ -381,6 +379,17 @@ header .ham-menu {
     max-width: 340px;
   }
   /* fine section 2 */
+
+  /* inizio section 3 */
+  .section-3 .col-12 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-3 .section3-img-text span {
+    padding-bottom: 12px;
+  }
+  /* fine section 3 */
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -421,6 +430,13 @@ header .ham-menu {
     font-size: 52px;
   }
   /* fine section 2 */
+
+  /* inizio section 3 */
+  .section-3 .col-12 {
+    flex-direction: row;
+    text-align: initial;
+  }
+  /* fine section 3 */
 }
 
  /* Large devices (desktops, 992px and up) */
