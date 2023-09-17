@@ -628,6 +628,16 @@ header .ham-menu {
   }
 
   /* fine section about us */
+
+  /* inizio section Get Started */
+  .get-started .getStarted-header h2 {
+    font-size: 22px;
+  }
+  
+  .get-started .getStarted-body h1 {
+    font-size: 56px;
+  }
+  /* fine section Get Started */
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -777,6 +787,16 @@ header .ham-menu {
     flex-basis: calc((100% / 12) * 3) ;
   }
   /* fine section .about-us */
+
+  /* inizio section Get Started */
+  .get-started .getStarted-header h2 {
+    font-size: 32px;
+  }
+  
+  .get-started .getStarted-body h1 {
+    font-size: 76px;
+  }
+  /* fine section Get Started */
 }
 
 
