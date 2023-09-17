@@ -107,7 +107,7 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 0 18px;
-  
+  letter-spacing: 3px;
 }
 
 /* HEADER */
@@ -124,9 +124,15 @@ header .navbar-list {
   align-items: center;
 }
 
+header .button {
+  letter-spacing: 0;
+}
+
 header .ham-menu {
   display: none;
 }
+
+
 /* FINE HEADER */
 
 /* INIZIO MAIN */
@@ -459,9 +465,58 @@ header .ham-menu {
   margin-left: 10px;
   line-height: 30px;
   padding: 0 10px;
+  letter-spacing:0;
 }
 
 /* fine section about us */
+
+/* inizio section Get Started */
+
+.get-started {
+  background-color: var(--purple);
+  color: var(--light);
+}
+
+.get-started .container-mini {
+  padding: 0 24px;
+}
+
+.get-started .getStarted-header .intro {
+  padding: 26px 0;
+  color: #CDCBF1;
+}
+
+.get-started .getStarted-header h2,
+.get-started .getStarted-body h1,
+.get-started .getStarted-body p
+ {
+  padding-bottom:30px;
+}
+
+.get-started .getStarted-header h2 {
+  font-size: 32px;
+}
+
+.get-started .getStarted-body h1 {
+  font-size: 76px;
+  color: var(--yellow);
+}
+
+.get-started .getStarted-body .button {
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 0 56px;
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 60px;
+  border-radius: 40px;
+}
+
+.get-started .getStarted-footer {
+  padding-bottom: 50px;  
+}
+
+/* fine section Get Started */
   
 /* FINE MAIN */
 
