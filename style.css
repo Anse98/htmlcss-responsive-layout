@@ -44,6 +44,11 @@ a {
 }
 
 .container-medium {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-small {
   max-width: 758px;
   margin: 0 auto;
   padding: 0 24px;
@@ -58,12 +63,20 @@ a {
   flex-basis: calc((100% / 12) * 4);
 }
 
+.col-3 {
+  flex-basis: calc((100% / 12) * 3);
+}
+
 .col-6 {
   flex-basis: calc((100% / 12) * 6);
 }
 
 .col-8 {
   flex-basis: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  flex-basis: calc((100% / 12) * 9) ;
 }
 
 .col-12 {
@@ -376,6 +389,10 @@ header .ham-menu {
   padding: 0 26px;
 }
 /* fine section benefits */
+
+/* inizio section about us */
+
+/* fine section about us */
   
 /* FINE MAIN */
 
