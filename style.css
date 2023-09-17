@@ -252,16 +252,16 @@ header .ham-menu {
 }
 /* fine section 2 */
 
-/* inizio section 3 */
-.section-3 .container {
+/* inizio section testimonials */
+.testimonials .container {
   padding: 0 24px;
 }
 
-.section-3 .row {
+.testimonials .row {
   flex-direction: column;
 }
 
-.section-3 .section3-body .col-12 {
+.testimonials .testimonials-body .col-12 {
   display: flex;
   color: var(--light);
   border-radius: 42px;
@@ -269,22 +269,22 @@ header .ham-menu {
   margin-bottom: 20px;
 }
 
-.section-3 .section3-header {
+.testimonials .testimonials-header {
   text-align: center;
   line-height: 26px;
 }
 
-.section3-header h2 {
+.testimonials-header h2 {
   padding: 26px 0;
   color: var(--purple);
   font-size: 26px;
 }
 
-.section3-header p {
+.testimonials-header p {
   padding-bottom: 26px;
 }
 
-.section3-body img {
+.testimonials-body img {
   padding: 20px 10px;
   object-fit: cover;
   border-radius: 50%;
@@ -292,7 +292,7 @@ header .ham-menu {
   width: 200px;
 }
 
-.section3-body .section3-img-text {
+.testimonials-body .testimonials-img-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,21 +300,82 @@ header .ham-menu {
   gap:16px;
 }
 
-.section3-body .section3-img-text i{
+.testimonials-body .testimonials-img-text i{
   line-height: 24px;
   vertical-align: text-bottom;
 }
 
-.section3-body .section3-img-text p {
+.testimonials-body .testimonials-img-text p {
   font-weight: lighter;
 }
 
-.section3-body .section3-img-text span {
+.testimonials-body .testimonials-img-text span {
   font-weight: 500;
 }
 
+.testimonials-body .col-12:last-child {
+  margin-bottom: 80px;
+}
+/* fine section testimonials */
 
-/* fine section 3 */
+/* inizio section benefits */
+.benefits {
+  background-color: var(--purple);
+  padding-bottom: 44px;
+}
+
+.benefits .container {
+  padding-left: 40px;
+}
+
+.benefits .row {
+  flex-direction: column;
+}
+
+.benefits .benefits-title {
+  align-self: center;
+  color: var(--light);
+  font-size : 26px;
+  padding: 32px 0;
+}
+
+.benefits .benefits-cards {
+  display: flex;
+  flex-wrap:wrap;
+  row-gap: 30px;
+}
+
+.benefits-cards .col-4 {
+  padding-right: 40px;
+}
+
+.benefits-cards .card-container {
+  background-color: var(--light);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.benefits-cards .card-container .card-header {
+  color: var(--purple);
+}
+
+.benefits-cards .card-container .card-header h2 {
+  font-size: 50px;
+}
+
+.benefits-cards .card-container .card-body p {
+  padding: 20px 0;
+  color: #919191;
+}
+
+.benefits-cards .card-container .card-button .button {
+  background-color: var(--purple);
+  color: var(--light);
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 26px;
+}
+/* fine section benefits */
   
 /* FINE MAIN */
 
@@ -380,16 +441,16 @@ header .ham-menu {
   }
   /* fine section 2 */
 
-  /* inizio section 3 */
-  .section-3 .col-12 {
+  /* inizio section testimonials */
+  .testimonials .col-12 {
     flex-direction: column;
     text-align: center;
   }
 
-  .section-3 .section3-img-text span {
+  .testimonials .testimonials-img-text span {
     padding-bottom: 12px;
   }
-  /* fine section 3 */
+  /* fine section testimonials */
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -416,8 +477,9 @@ header .ham-menu {
   .hero .col-4 {
     flex-basis: calc((100% / 12) * 4 - 24px);
   }
-  /* inizio section 2 */
+  /* fine hero section  */
 
+  /* inizio section 2 */
   .section-2 .text-in .text-in-container {
     max-width: 100%;
   }
@@ -431,12 +493,12 @@ header .ham-menu {
   }
   /* fine section 2 */
 
-  /* inizio section 3 */
-  .section-3 .col-12 {
+  /* inizio section testimonials */
+  .testimonials .col-12 {
     flex-direction: row;
     text-align: initial;
   }
-  /* fine section 3 */
+  /* fine section testimonials */
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -452,6 +514,7 @@ header .ham-menu {
   header .navbar-list {
     display: flex;
   }
+  /* fine header */
 
   /* hero section */
 
@@ -462,6 +525,8 @@ header .ham-menu {
   .hero .col-8 .col-img img {
     width: 70%;
   }
+  /* fine hero section  */
+
   /* section 2 */
   .section-2 .text-out {
     flex-basis: 50%;
@@ -483,8 +548,6 @@ header .ham-menu {
     font-size: 32px;
   }
   /* fine section 2 */
-
-  /* fine header */
 }
 
 
