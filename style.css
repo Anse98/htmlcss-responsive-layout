@@ -54,6 +54,12 @@ a {
   padding: 0 24px;
 }
 
+.container-mini {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -350,6 +356,7 @@ header .ham-menu {
   color: var(--light);
   font-size : 26px;
   padding: 32px 0;
+  padding-right: 40px;
 }
 
 .benefits .benefits-cards {
