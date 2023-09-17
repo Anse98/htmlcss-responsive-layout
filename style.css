@@ -397,7 +397,7 @@ header .ham-menu {
 }
 
 .about-us .container-medium {
-  padding: 0 24px;
+  padding: 0 52px;
 }
 
 .about-us .about-us-text {
@@ -413,14 +413,19 @@ header .ham-menu {
   font-size: 50px;
 }
 
+.about-us .about-us-imgtext .imgtext-container {
+  max-width: 200px;
+}
+
 .about-us .about-us-imgtext figure {   
   position: relative;
+  display: inline-block;
 }
 
 .about-us-imgtext figure i {   
   font-size: 52px;
   position: absolute;
-  right: 50px;
+  right: 17px;
   color: var(--purple);
 } 
 
@@ -534,6 +539,33 @@ header .ham-menu {
     flex-basis: 100%;
   }
   /* fine section benefits */
+
+  /* inizio section about us */
+  .about-us .about-us-text h2 {
+    font-size: 34px;
+  }
+
+  .about-us .about-us-text {
+    flex-basis: 100%;
+  }
+
+  .about-us .about-us-text p:last-child {
+    margin-bottom: 26px;
+  }
+
+  .about-us .about-us-imgtext .imgtext-container {
+    max-width: 100%;
+  }
+
+  .about-us .about-us-imgtext figure i {
+    font-size: 42px;
+  }
+
+  .about-us .about-us-imgtext {
+    flex-basis: 100%;
+  }
+
+  /* fine section about us */
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -591,6 +623,33 @@ header .ham-menu {
     flex-basis:50%;
   }
   /* fine section benefits */
+
+   /* inizio section about us */
+   .about-us .about-us-text h2 {
+    font-size: 44px;
+  }
+
+  .about-us .about-us-text {
+    flex-basis: 60%;
+  }
+
+  .about-us .about-us-text p:last-child {
+    margin-bottom:0;
+  }
+
+  .about-us .about-us-imgtext .imgtext-container {
+    max-width: 200px;
+  }
+
+  .about-us .about-us-imgtext {
+    padding-top: 50px;
+  }
+
+  .about-us .about-us-imgtext {
+    flex-basis: 40%;
+  }
+
+  /* fine section about us */
 }
 
  /* Large devices (desktops, 992px and up) */
@@ -646,6 +705,16 @@ header .ham-menu {
     flex-basis: calc((100% / 12) * 4);
   }
   /* fine section benefits */
+
+  /* inizio section .about-us */
+  .about-us .about-us-text {
+    flex-basis: calc((100% / 12) * 9) ;
+  }
+
+  .about-us .about-us-imgtext {
+    flex-basis: calc((100% / 12) * 3) ;
+  }
+  /* fine section .about-us */
 }
 
 
